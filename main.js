@@ -23,7 +23,7 @@ Vue.component("product", {
           <ul>
             <li v-for="detail in details">{{ detail }}</li>
           </ul>
-
+          <div class="clearfix">
           <div class="color-box"
                v-for="(variant, index) in variants" 
                :key="variant.variantId"
@@ -31,6 +31,7 @@ Vue.component("product", {
                @mouseover="updateProduct(index)"
                >
           </div> 
+          </div>
 
           <button v-on:click="addToCart" 
             :disabled="!inStock"

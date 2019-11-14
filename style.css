@@ -48,6 +48,7 @@ img {
 
 button {
   margin-top: 30px;
+  margin-bottom: 30px;
   border: none;
   background-color: #1e95ea;
   color: white;
@@ -61,7 +62,7 @@ button {
 }
 
 .review-form {
-  width: 400px;
+  width: 100%;
   padding: 20px;
   margin: 40px;
   border: 1px solid #d8d8d8;
@@ -86,4 +87,21 @@ textarea {
 .activeTab {
   color: #16c0b0;
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 600px) {
+  .product-image,
+  .product-info {
+    margin-top: 10px;
+    width: 100%;
+  }
+  .color-box {
+    float: left;
+    margin-right: 10px;
+  }
+  .clearfix::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
 }
